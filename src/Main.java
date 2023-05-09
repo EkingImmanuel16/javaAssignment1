@@ -53,15 +53,14 @@ public class Main {
 
             System.out.println(Energy.PotentialEnergy(Mass,Physics.getGravity(), Height));
 
-    
-    double potentialDifference;
-    double current;
-    double time;
-    
-    System.out.println("ElectricalEnergy");
-    System.out.println("potentialDifference");
-    potentialDifference = input.nextDouble();
-    current = input.nextDouble();
-    time = input.nextDouble();
-    System.out.println(Energy.ElectricalEnergy(potententialDifference,current,time));
 }
+
+        //   ...... MOMENTUM ....
+           System.out.print("Enter the mass in kilograms: ");
+        double mass = input.nextDouble();
+
+           System.out.print("Enter the velocity in meters per second: ");
+        double velocity = input.nextDouble();
+
+        System.out.println(Energy.Momentum(mass, velocity, Physics.getGravity()));
+    }
